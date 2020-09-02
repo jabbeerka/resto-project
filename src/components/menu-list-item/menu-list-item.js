@@ -12,12 +12,12 @@ const MenuListItem = ({ menuItem, onAddToCard }) => {
             <li className="menu__item">
                 <div className="menu__title">{title}</div>
                 <Link to={`/${id}`}><img className="menu__img" src={url} alt={title}></img></Link>
-                <div className="menu__category">Category: <span>{category}</span></div>
-                {category === "pizza" ? <img className="menu__category_icon" src={pizza} alt="pizz"/> : null }
-                {category ==="meat" ? <img className="menu__category_icon" src={meat} alt="meat"/>  : null}
-                {category ==="salads" ? <img className="menu__category_icon" src={salads} alt="salad"/>  : null}
-                <div className="menu__price">Price: <span>{price}</span></div>
-                <button onClick={()=> onAddToCard(id)} className="menu__btn">Add to cart</button>
+                <div className="menu__category">Категория: <span>{category}</span></div>
+                {category === "пицца" ? <img className="menu__category_icon" src={pizza} alt="pizz"/> : null }
+                {category ==="мясо" ? <img className="menu__category_icon" src={meat} alt="meat"/>  : null}
+                {category ==="салаты" ? <img className="menu__category_icon" src={salads} alt="salad"/>  : null}
+                <div className="menu__price">Цена <span>{price}руб.</span></div>
+                <button onClick={()=> onAddToCard(id)} className="menu__btn">Добавить в корзину</button>
             </li>
         </>
     )

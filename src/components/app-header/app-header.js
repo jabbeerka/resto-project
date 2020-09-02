@@ -7,10 +7,10 @@ import { connect } from 'react-redux';
 const AppHeader = ({totalPrice}) => {
     return (
         <header className="header">
-            <NavLink to='/' className="header__link" >Menu</NavLink>
+            <NavLink to='/' className="header__link" >Меню</NavLink>
             <NavLink className="header__link" to="/cartpage/">
                 <img className="header__cart" src={cartIcon} alt="cart"></img>
-                Total: {totalPrice} $
+                Итого: {totalPrice} руб.
             </NavLink>
         </header>
     )

@@ -18,12 +18,12 @@ const CartTable = ({ items, deleteFromCard, RestoService, sendOrder, orderIsSend
                 {items.map(item => {
                     const { title, url, price, id, qtty } = item
                     return (
-                    <div className="cart__item">
+                    <div key={id} className="cart__item">
                         <img src={url} className="cart__item-img" alt={title}></img>
                         <div className="cart__item-title">{title}</div>
-                        <span onClick={()=>deleteFromCard(id, "one")}>-</span>
-                        <div className="cart__item-price">{price}$ * {qtty}</div>
-                        <span onClick={()=>addToCard(id)}>+</span>
+                        <span className="cart__item-change" onClick={()=>deleteFromCard(id, "one")}>-</span>
+                        <div className="cart__item-price">{price}$ * {qtty} шт</div>
+                        <span className="cart__item-change" onClick={()=>addToCard(id)}>+</span>
                         <div onClick={() => deleteFromCard(id)} className="cart__close">&times;</div>
                     </div>
                     )
