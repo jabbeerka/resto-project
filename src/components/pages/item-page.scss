@@ -1,0 +1,50 @@
+.item {
+        width: 100%;
+        min-height: 400px;
+        background-color: #fff;
+        box-shadow: 5px 5px 45px rgba(256,256,256,.1);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 0 auto;
+    &__title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__desc {
+        display: block;
+        margin: 0 auto;
+        color: grey;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    &__img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    &__price {
+        color: rgb(139, 0, 0);
+        font-size: 25px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 40px;
+        border: none;
+        background-color: #29a745;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
